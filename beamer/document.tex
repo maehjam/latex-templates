@@ -1,0 +1,102 @@
+\documentclass[presentation]{beamer}
+%\documentclass[handout,notes=show]{beamer}
+\usepackage{mystyle}
+
+% for handout with 8 slides on one page uncomment
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{8 on 1}[a4paper,border shrink=2mm] 
+
+\setbeamertemplate{note page}[plain]
+
+\title{Title}
+
+\author{Mirjam Friesen}
+\date{\today}
+
+\begin{document}
+
+% Title
+% use the standart title page
+\frame{\titlepage}
+% or style it on your own
+\begin{frame}[plain]
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+    \usebeamerfont{title}
+    \inserttitle
+    \end{beamercolorbox}
+    \begin{columns}
+    \column{0.4\textwidth}
+    \begin{figure}
+    \vspace{2cm}
+    First figure
+    \vspace{3cm}    
+    \end{figure}
+    \column{0.5\textwidth}
+    \begin{figure}
+    \vspace{1cm}
+    Second figure
+    \end{figure}
+    \end{columns}
+    \begin{columns}
+    \column{0.4\textwidth}
+    \centering
+    {\usebeamerfont{author}
+    \insertauthor
+    }
+    \\ \medskip
+    {\usebeamerfont{date}
+    \insertdate
+    }
+    \column{0.6\textwidth}
+    \end{columns}
+\end{frame}
+\note{}
+\setcounter{framenumber}{0}
+%------------
+\begin{frame}{A Theorem}
+    \begin{theorem}[with Coauthor]
+        This astonishing thing is true.
+    \vspace{2ex}
+    \begin{itemize}
+    \setlength\itemsep{1.5ex} % some times is a good idea so change the spacing
+    \item first
+    \item second
+    \item third
+    \end{itemize}
+    \end{theorem}
+\end{frame}
+\note{Tell people about cool result}
+%---------------
+\begin{frame}{Frame with a Proposition}
+    \begin{proposition}[David Dundas\cite{Motor}]
+        Jeans on.
+    \end{proposition}
+\end{frame}
+\note{}
+%------------
+\begin{frame}{Demonstration of a block}
+    \begin{block}{Colorful inequalitity}
+    \begin{align*}
+     y &\leq 2 
+       - {\color{C0}\omega^a(\delta^{in}(c))} 
+       - {\color{C2}\omega^c(\delta^{in}(a))} 
+       - {\color{C1}\omega^b(\delta^{in}(d))} 
+       - {\color{C3}\omega^d(\delta^{in}(b))}\\
+     y &\leq 2 - \omega^a(\delta^{in}(d)) - \omega^d(\delta^{in}(a)) 
+       -\omega^b(\delta^{in}(c)) - \omega^c(\delta^{in}(b))
+    \end{align*}
+    \end{block}
+\end{frame}
+\note{}
+%------------
+\appendix 
+\begin{frame}{Bibliography}
+	\tiny
+    \bibliographystyle{plain}
+    \bibliography{references}
+\end{frame}
+\note{}
+\addtocounter{framenumber}{-1}
+%------------
+\end{document}

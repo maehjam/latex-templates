@@ -1,0 +1,58 @@
+\ProvidesPackage{mystyle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bbm}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[textwidth=3cm]{todonotes} 
+
+\usepackage{url}
+
+\usepackage{xspace}
+\usepackage{xparse}
+
+% colors
+
+\definecolor{C0}{rgb}{0,0,1}
+\definecolor{C3}{rgb}{1,0,0}
+
+\definecolor{L0}{HTML}{1F33AF}
+\definecolor{L1}{HTML}{0C900C}
+\definecolor{L2}{HTML}{94378D}
+
+% links
+\usepackage[colorlinks=true, 
+					linkcolor=L0,
+					citecolor=L1,
+					urlcolor=L2]{hyperref}
+
+
+%math	
+
+\DeclareDocumentCommand\Q{}{\mathbb{Q}}
+\DeclareDocumentCommand\R{}{\mathbb{R}}
+ 	
+\graphicspath{ {./tikz} }
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{observation}{Observation}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{question}{Question}
+

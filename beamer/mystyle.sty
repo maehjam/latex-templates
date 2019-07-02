@@ -1,0 +1,99 @@
+\ProvidesPackage{mystyle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% font
+\usepackage{palatino}
+\usepackage{mathpazo}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bbm}
+\usepackage{verbatim}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\usepackage{url}
+
+\usepackage{xspace}
+\usepackage{xparse}
+
+\usepackage{rotating}
+\usepackage{xcolor}
+
+
+% color cycle of matplotlib (v2.0)
+
+\definecolor{C0}{HTML}{1F77B4}
+\definecolor{C1}{HTML}{FF7F0E}
+\definecolor{C2}{HTML}{2CA02C}
+\definecolor{C3}{HTML}{D62728}
+\definecolor{C4}{HTML}{9467BD}
+\definecolor{C5}{HTML}{8C564B}
+\definecolor{C6}{HTML}{e377c2}
+
+
+% mytheme specifications
+
+\useoutertheme{infolines}
+\setbeamertemplate{headline}{}
+
+\setbeamertemplate{footline}{
+\leavevmode
+\hbox{%
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertframenumber/\inserttotalframenumber \hspace*{2ex}% 
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+
+\setbeamertemplate{itemize item}[circle]
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamercolor{author in head/foot}{fg=white, bg=black}
+\setbeamercolor{block title}{fg=black}
+\setbeamercolor{date in head/foot}{fg=white, bg=black}
+\setbeamercolor{frametitle}{fg=white, bg=black}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{title}{fg=white, bg=black}
+\setbeamercolor{titlelike}{fg=white, bg=black}
+\setbeamercolor{title in head/foot}{fg=white, bg=black}
+
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+
+\setbeamertemplate{bibliography item}{}
+
+\setbeamerfont{block title}{family=\bf}
+\setbeamerfont{bibliography entry title}{family=\normalfont, size=\footnotesize}
+\setbeamerfont{bibliography entry author}{family=\bf, size=\footnotesize}
+
+% math
+
+\DeclareDocumentCommand\R{}{\mathbb{R}}
+\DeclareDocumentCommand\Z{}{\mathbb{Z}}
+
+%\newtheorem{theorem}{Theorem} % allready defined
+\newtheorem{proposition}{Proposition}
+%\newtheorem{corollary}{Corollary} % allready defined
+%\newtheorem{lemma}{Lemma} % allready defined
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{question}{Question}
+%\newtheorem{example}{Example} % allready defined
